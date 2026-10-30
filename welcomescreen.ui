@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#Dialog{
+background-color:qlineargradient(spread:pad, x1:0.075, y1:0.0910455, x2:0.837, y2:0.835227, stop:0 rgba(10, 47, 212, 255), stop:1 rgba(249, 224, 255, 255))}
+</string>
+  </property>
+  <widget class="QPushButton" name="loginbutton">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>460</y>
+     <width>361</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(6, 32, 179);
+background-color: rgb(249, 224, 255);
+font: 75 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ورود / Login</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="createaccbutton">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>550</y>
+     <width>371</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+background-color: rgb(249, 224, 255);
+font: 75 12pt &quot;B Nazanin&quot;;
+color: rgb(6, 32, 179);</string>
+   </property>
+   <property name="text">
+    <string>ساختن حساب جدید / Create a new account</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>40</y>
+     <width>331</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(249, 224, 255);
+font: 75 48pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Welcome</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>160</y>
+     <width>831</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>180</y>
+     <width>311</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 48pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>خوش آمدید</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="adminbutton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>630</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(6, 32, 179);
+background-color: rgb(249, 224, 255);
+font: 10pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Admin / ادمین</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

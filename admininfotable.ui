@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#Dialog{
+background-color:qlineargradient(spread:pad, x1:0.075, y1:0.0910455, x2:0.837, y2:0.835227, stop:0 rgba(10, 47, 212, 255), stop:1 rgba(249, 224, 255, 255))}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>150</y>
+     <width>541</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 35pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>جدول اطلاعات-کاربری ادمین</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>160</y>
+     <width>831</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>40</y>
+     <width>991</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(249, 224, 255);
+font: 35pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Admin User-Information Table</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="error">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>510</y>
+     <width>491</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;B Nazanin&quot;;
+color: rgb(208, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>270</y>
+     <width>1111</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(233, 229, 255);
+color: rgb(0, 0, 0);</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Username / نام کاربری</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Password / رمزعبور</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name / نام</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Last Name / نام خانوادگی</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Age / سن</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Gender / جنسیت</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nationality / ملیت</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Education / تحصیلات</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

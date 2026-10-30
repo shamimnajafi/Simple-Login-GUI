@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#Dialog{
+background-color:qlineargradient(spread:pad, x1:0.075, y1:0.0910455, x2:0.837, y2:0.835227, stop:0 rgba(10, 47, 212, 255), stop:1 rgba(249, 224, 255, 255))}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>140</y>
+     <width>151</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 48pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>ورود</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>160</y>
+     <width>831</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>40</y>
+     <width>211</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(249, 224, 255);
+font: 75 48pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginbutton">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>590</y>
+     <width>361</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(6, 32, 179);
+background-color: rgb(249, 224, 255);
+font: 75 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ورود / Login</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>300</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>نام کاربری / Username</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ufield">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>290</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>400</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>رمز عبور / Password</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passfield">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>400</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="error">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>495</y>
+     <width>491</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;B Nazanin&quot;;
+color: rgb(208, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>ufield</tabstop>
+  <tabstop>passfield</tabstop>
+  <tabstop>loginbutton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

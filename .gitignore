@@ -1,0 +1,23 @@
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# PyCharm and VS Code settings
+.idea/
+.vscode
+
+# Temporary files
+*.log
+*.tmp
+
+#Windows files
+Thumbs.db
+Desktop.ini
+
+.txt

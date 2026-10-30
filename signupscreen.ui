@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#Dialog{
+background-color:qlineargradient(spread:pad, x1:0.075, y1:0.0910455, x2:0.837, y2:0.835227, stop:0 rgba(10, 47, 212, 255), stop:1 rgba(249, 224, 255, 255))}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>150</y>
+     <width>231</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 48pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>ثبت نام</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>160</y>
+     <width>831</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>40</y>
+     <width>281</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(249, 224, 255);
+font: 75 48pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Sign up</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="createaccbutton">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>640</y>
+     <width>361</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+color: rgb(6, 32, 179);
+background-color: rgb(249, 224, 255);
+font: 75 14pt &quot;B Nazanin&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Create Account / ساخت حساب کاربری</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>260</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>نام کاربری / Username</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ufield">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>310</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>390</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>رمز عبور / Password</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passfield">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>430</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="error">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>720</y>
+     <width>601</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;B Nazanin&quot;;
+color: rgb(208, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="confirmpassfield">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>550</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>510</y>
+     <width>361</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>Confirm Password / تکرار رمز عبور</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>390</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>Last Name / نام خانوادگی</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="age">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>560</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>270</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>Name / نام</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>560</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>Age / سن</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lastname">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>430</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="name">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>320</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>300</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>Gender / جنسیت</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>390</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>Nationality / ملیت</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="educationbox">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>480</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Choose / انتخاب</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Diploma / دیپلم</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bachelor's / کارشناسی</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Master's / کارشناسی ارشد</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ph.D / دکترا</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Postdoc / فوق دکترا</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>None / هیج</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="nationbox">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>390</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Choose / انتخاب</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Asian / آسیایی</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>European / اوروپایی</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>North American / آمریکایی شمالی</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>South American / آمیکایی جنوبی</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Australian / اوسترالیایی</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>African / آفریقایی</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>480</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;B Nazanin&quot;;
+color: rgb(249, 224, 255);</string>
+   </property>
+   <property name="text">
+    <string>Education / تحصیلات</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="genderbox">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>310</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Choose / انتخاب</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Male / مرد</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Female / زن</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>ufield</tabstop>
+  <tabstop>passfield</tabstop>
+  <tabstop>confirmpassfield</tabstop>
+  <tabstop>name</tabstop>
+  <tabstop>lastname</tabstop>
+  <tabstop>genderbox</tabstop>
+  <tabstop>nationbox</tabstop>
+  <tabstop>educationbox</tabstop>
+  <tabstop>age</tabstop>
+  <tabstop>createaccbutton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
